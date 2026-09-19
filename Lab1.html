@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page - Sara Ahmed</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sara Ahmed</h1>
+        <p>Computer Science Student &amp; Aspiring Web Developer</p>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <h3>Who I Am</h3>
+
+            <figure>
+                <img src="sarah.jpeg"
+                     alt="Sara Ahmed smiling at her graduation ceremony wearing a cap and gown"
+                     width="400" height="250">
+                <figcaption>Sara Ahmed at her graduation ceremony, 2027</figcaption>
+            </figure>
+
+            <p title="This is a short introduction about me">
+                Hello! I am a third-year Computer Science student at Princess Nourah bint
+                Abdulrahman University. I am passionate about <strong>web development</strong>
+                and I enjoy building <em>interactive</em> and accessible websites. In my free
+                time, I like reading, hiking, and exploring new technologies.
+            </p>
+
+            <p>
+                I believe that learning never stops. My goal is to become a full-stack
+                developer and contribute to open-source projects that make a difference.
+            </p>
+
+            <p>
+                This page is best viewed by audiences &gt; 13 years old.
+            </p>
+
+            <hr>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <ul>
+                <li>HTML5 &amp; Semantic Markup</li>
+                <li>CSS3 &amp; Responsive Design</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Python Programming</li>
+                <li>Git &amp; GitHub</li>
+                <li>Problem Solving</li>
+            </ul>
+
+            <hr>
+        </section>
+
+        <section id="roadmap">
+            <h2>My Learning Roadmap</h2>
+
+            <ol>
+                <li>Master HTML &amp; CSS fundamentals</li>
+                <li>Learn JavaScript and DOM manipulation</li>
+                <li>Build responsive websites with Flexbox &amp; Grid</li>
+                <li>Learn a front-end framework (React or Vue)</li>
+                <li>Study back-end development with Node.js</li>
+                <li>Build full-stack projects and deploy them</li>
+            </ol>
+
+            <hr>
+        </section>
+
+        <section id="courses">
+            <h2>Completed Courses</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Programming</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>CS201</td>
+                        <td>Data Structures &amp; Algorithms</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>CS486</td>
+                        <td>Web Application Development</td>
+                        <td>2027</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Portfolio Website</h3>
+                <p>
+                    A responsive personal portfolio website built using HTML5, CSS3, and
+                    vanilla JavaScript. The site showcases my projects, skills, and contact
+                    information with a clean, modern design.
+                </p>
+
+                <aside>
+                    <h4>Tip</h4>
+                    <p>
+                        Always use semantic HTML elements like <code>&lt;header&gt;</code>,
+                        <code>&lt;nav&gt;</code>, and <code>&lt;main&gt;</code> to improve
+                        accessibility and SEO.
+                    </p>
+                </aside>
+            </article>
+
+            <article>
+                <h3>Weather App</h3>
+                <p>
+                    A simple weather application that fetches data from the OpenWeatherMap API
+                    and displays current weather conditions for any city entered by the user.
+                </p>
+
+                <aside>
+                    <h4>Related Link</h4>
+                    <p>
+                        Learn more about APIs at
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs"
+                           target="_blank" rel="noopener">
+                           MDN Web APIs Guide
+                        </a>
+                    </p>
+                </aside>
+            </article>
+
+            <hr>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Feel free to reach out! Fill out the form below and I will get back to you
+                as soon as possible.
+            </p>
+
+            <form action="/submit-contact" method="post">
+
+                <fieldset>
+                    <legend>Personal Details</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                    <br><br>
+
+                    <label for="date">Preferred Contact Date:</label>
+                    <input type="date" id="date" name="date">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Message Preferences</legend>
+
+                    <label for="topic">Choose a Topic:</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General Inquiry</option>
+                        <option value="project">Project Collaboration</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                    <br><br>
+
+                    <p>Preferred Reply Method:</p>
+                    <input type="radio" id="reply-email" name="reply" value="email">
+                    <label for="reply-email">Email</label>
+
+                    <input type="radio" id="reply-phone" name="reply" value="phone">
+                    <label for="reply-phone">Phone</label>
+                    <br><br>
+
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to my newsletter</label>
+                    <br><br>
+
+                    <label for="notes">Your Message:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="40"
+                              placeholder="Write your message here..."></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit" aria-label="Send your contact message">Send Message</button>
+                <button type="reset">Clear</button>
+
+            </form>
+
+            <br>
+
+            <h3>Watch My Intro Video</h3>
+            <video controls width="500">
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:sara.ahmed@example.com">sara.ahmed@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/saraahmed" target="_blank" rel="noopener">github.com/saraahmed</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/saraahmed" target="_blank" rel="noopener">linkedin.com/in/saraahmed</a></p>
+        <p>&copy; 2027 Sara Ahmed. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
