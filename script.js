@@ -28,4 +28,23 @@ window.onload = function () {
       document.getElementById("nameMsg").innerHTML = "Thank you!";
     }
   });
+
+// 4. Keyboard event: check the email while the user types
+document.getElementById("email").addEventListener("keyup", function () {
+  var email = document.getElementById("email").value;
+  if (email.indexOf("@") === -1) {
+    document.getElementById("emailMsg").innerHTML = "Email must contain @";
+  } else {
+    document.getElementById("emailMsg").innerHTML = "Looks good!";
+  }
+});
+// 5. Mouse event: fade the photo when the mouse is over it
+  var photo = document.getElementById("photo");
+  photo.addEventListener("mouseover", function () {
+    photo.style.opacity = "0.5";
+  });
+  photo.addEventListener("mouseout", function () {
+    photo.style.opacity = "1";
+  });
+
 };

@@ -22,11 +22,11 @@ nav a:hover {
   margin: 20px;
 }
 
-/* 4. Float the image to the right */
+/* 4. Float the image to the right
 figure {
   float: right;
   margin: 0 0 10px 15px;
-}
+} */
 
 /* 5. Table borders */
 th, td {
