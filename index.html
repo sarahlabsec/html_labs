@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page - Sara Ahmed</title>
+    <!-- ADDED: link the CSS and JavaScript files -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
     <header>
         <h1>Sara Ahmed</h1>
         <p>Computer Science Student &amp; Aspiring Web Developer</p>
+        <!-- ADDED: greeting paragraph and dark mode button -->
+        <p id="greeting"></p>
+        <button id="themeBtn">Dark mode</button>
     </header>
 
     <nav>
@@ -120,7 +126,8 @@
         <section id="projects">
             <h2>Projects</h2>
 
-            <article>
+            <!-- ADDED: class="card" on both articles -->
+            <article class="card">
                 <h3>Portfolio Website</h3>
                 <p>
                     A responsive personal portfolio website built using HTML5, CSS3, and
@@ -138,7 +145,7 @@
                 </aside>
             </article>
 
-            <article>
+            <article class="card">
                 <h3>Weather App</h3>
                 <p>
                     A simple weather application that fetches data from the OpenWeatherMap API
@@ -168,13 +175,16 @@
                 as soon as possible.
             </p>
 
-            <form action="/submit-contact" method="post">
+            <!-- ADDED: id="contactForm" and novalidate -->
+            <form action="/submit-contact" method="post" id="contactForm" novalidate>
 
                 <fieldset>
                     <legend>Personal Details</legend>
 
                     <label for="fullname">Full Name:</label>
                     <input type="text" id="fullname" name="fullname" required>
+                    <!-- ADDED: message area for the name check -->
+                    <span id="nameMsg"></span>
                     <br><br>
 
                     <label for="email">Email:</label>
