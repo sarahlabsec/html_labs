@@ -1,0 +1,40 @@
+/* Exercise 10: CSS answers for Sara's personal page */
+
+/* 1. Body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f8;
+  color: #222222;
+}
+
+/* 2. Link colours */
+nav a:link {
+  color: #0b5ed7;
+}
+nav a:hover {
+  color: #d63384;
+}
+
+/* 3. A class for the articles */
+.card {
+  border: 2px solid #1f6f6b;
+  padding: 15px;
+  margin: 20px;
+}
+
+/* 4. Float the image to the right */
+figure {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+
+/* 5. Table borders */
+th, td {
+  border: 1px solid #333333;
+}
+
+/* 6. Dark mode class (switched on by JavaScript) */
+.dark {
+  background-color: #111111;
+  color: #f0f0f0;
+}
